@@ -1,0 +1,21 @@
+Sempre quando tiver com duvida no comando, colocar um ponto de interrogação (?)
+
+!Ponto de esclamação serve para: Cometários - Desativar comandos;
+
+Quando acessar o terminal do switch fazer o: enable
+
+!Configuração Data e Hora 
+    clock set: serve para a data e hora: :15:15:00, dia:22 Mês:May Ano:2024
+
+    !Modo de configuração Global
+    Configura terminal
+
+    !Configuração Hostname
+    hostname sw-01
+
+    !Comando para sair de todos os modos
+    end
+
+    !Salvando da RAM para NVRAM
+    comando: copy running-config startup-config, e aperta "enter", e depois "enter" de novo
+    

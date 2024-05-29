@@ -1,3 +1,5 @@
+COMANDOS DA AULA 3 DE INFRAESTRUTURA 
+
 Habilitando o Log de Debug no Router.
   service timestamps debug datetime msec
 

@@ -1,0 +1,15 @@
+!Switch 2960 (acesso lado esquerdo)
+enable 
+    configure terminal
+        interface range GigabitEthernet 0/1 - 2
+        0/23 - 24
+        switchport mode trunk
+        switchport nonegotiate
+        do write
+        exit
+    interface range FastEthernet 0/23 - 24
+        switchport mode trunk
+        switchport nonegotiate
+        do write
+        end
+write

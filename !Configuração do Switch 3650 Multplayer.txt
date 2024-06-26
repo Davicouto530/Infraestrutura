@@ -1,0 +1,34 @@
+!Configuração do Switch 3650
+
+enable
+    configure terminal
+        ip routing
+        interface vlan 20
+            description interface Gateway da VLAN 20
+            ip address 192.168.20.254 255.255.255.0
+            no shutdown 
+            end
+write
+
+show running-config
+show ip interface brief
+show ip route
+ping 192.168.20.254
+ping 192.168.20.1
+
+!Configuração do Switch 3650
+enable
+    configure terminal
+        interface vlan 30
+            description interface Gateway da VLAN 30
+            ip address 192.168.30.254 255.255.255.0
+            ip helper-address 192.168.20.2
+            no shutdown 
+            end 
+write
+
+Prompet de comando
+ipconfig /all (169.254.x.x ERRO ESSE IP)
+ipconfig /release
+ipconfig /renew
+
